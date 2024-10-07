@@ -1,3 +1,4 @@
+//this file is for creating a new user
 const router = require('express').Router();
 const { User } = require('../../models');
 router.post('/', async (req, res) => {

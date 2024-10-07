@@ -1,7 +1,8 @@
+//this file will handle the DELETE request to remove a friend from a user's friend list
 const router = require('express').Router();
 const { User } = require('../../models');
 
-// DELETE route to remove a friend
+//this route will remove a friend from a user's friend list
 router.delete('/users/:userId/friends/:friendId', async (req, res) => {
   try {
     const user = await User.findOneAndUpdate(

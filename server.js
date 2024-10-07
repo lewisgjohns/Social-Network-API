@@ -1,6 +1,8 @@
+//this file is the entry point for the server and will be responsible for starting the server and connecting to the database
 const express = require('express');
 const mongoose = require('mongoose');
 
+//this line of code will allow us to use the .env file to store sensitive data
 const app = express();
 const PORT = process.env.PORT || 3001;
 

@@ -1,7 +1,8 @@
+//this route is used to add a friend to a user's friend list
 const router = require('express').Router();
 const { User } = require('../../models');
 
-// POST route to add a friend
+//this route is used to add a friend to a user's friend list
 router.post('/users/:userId/friends/:friendId', async (req, res) => {
   try {
     const user = await User.findOneAndUpdate(

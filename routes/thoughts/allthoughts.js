@@ -1,3 +1,4 @@
+//this file will get all thoughts
 const router = require('express').Router();
 const { Thought } = require('../../models');
 router.get('/', async (req, res) => {

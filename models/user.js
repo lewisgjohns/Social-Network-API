@@ -1,5 +1,7 @@
+// Purpose: Create a User model for the application.
 const { Schema, model } = require('mongoose');
 
+//this will be the model for the users
 const userSchema = new Schema({
   username: {
     type: String,
@@ -33,7 +35,7 @@ const userSchema = new Schema({
   id: false
 });
 
-// Virtual for friendCount
+//this will create a virtual called friendCount that retrieves the length of the user's friends array field on query.
 userSchema.virtual('friendCount').get(function() {
   return this.friends.length;
 });

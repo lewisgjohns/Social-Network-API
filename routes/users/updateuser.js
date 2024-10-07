@@ -1,3 +1,4 @@
+//this route is used to update the user details
 const router = require('express').Router();
 const { User } = require('../../models');
 router.put('/:id', async (req, res) => {

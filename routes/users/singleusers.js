@@ -1,3 +1,4 @@
+//this file is for getting a single user by id
 const router = require('express').Router();
 const { User } = require('../../models');
 router.get('/:id', async (req, res) => {

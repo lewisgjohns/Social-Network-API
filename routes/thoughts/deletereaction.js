@@ -1,3 +1,4 @@
+//this file will delete a reaction from a thought
 const router = require('express').Router();
 const { Thought } = require('../../models');
 router.delete('/:thoughtId/reactions/:reactionId', async (req, res) => {

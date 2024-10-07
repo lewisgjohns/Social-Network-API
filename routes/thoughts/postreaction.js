@@ -1,3 +1,4 @@
+//this file is for posting a reaction to a thought
 const router = require('express').Router();
 const { Thought } = require('../../models');
 router.post('/:thoughtId/reactions', async (req, res) => {

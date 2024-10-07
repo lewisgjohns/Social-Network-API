@@ -1,5 +1,7 @@
+//this will be the model for the thoughts
 const { Schema, model, Types } = require('mongoose');
 
+//this will be the model for the reactions
 const reactionSchema = new Schema({
   reactionId: {
     type: Schema.Types.ObjectId,
@@ -25,6 +27,7 @@ const reactionSchema = new Schema({
   }
 });
 
+//this will be the model for the thoughts
 const thoughtSchema = new Schema({
   thoughtText: {
     type: String,
@@ -51,7 +54,7 @@ const thoughtSchema = new Schema({
   id: false
 });
 
-// Virtual for reactionCount
+// this will create a virtual called reactionCount that retrieves the length of the thought's reactions array field on query.
 thoughtSchema.virtual('reactionCount').get(function() {
   return this.reactions.length;
 });

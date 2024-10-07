@@ -1,3 +1,4 @@
+//this file is for deleting a user and all their thoughts
 const router = require('express').Router();
 const { User } = require('../../models');
 router.delete('/:id', async (req, res) => {

@@ -1,3 +1,4 @@
+//this file is for creating a new thought
 const router = require('express').Router();
 const { Thought, User } = require('../../models');
 router.post('/', async (req, res) => {
